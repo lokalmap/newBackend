@@ -1,0 +1,6 @@
+{
+  "mailgun": {
+    "apiKey": "<KEY>",
+    "domain": "<DOMAIN>"
+  }
+}
