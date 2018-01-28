@@ -1,0 +1,51 @@
+{
+  "name": "Map-DB",
+  "plural": "Map-DBs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "storeName": {
+      "type": "string",
+      "required": true
+    },
+    "xcoor": {
+      "type": "geopoint"
+    },
+    "ycoor": {
+      "type": "geopoint"
+    },
+    "dtl1": {
+      "type": [
+        "any"
+      ]
+    },
+    "dtl2": {
+      "type": [
+        "any"
+      ]
+    },
+    "dtl3": {
+      "type": [
+        "any"
+      ]
+    },
+    "aclGrp": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientAcc": {
+      "type": "belongsTo",
+      "model": "ClientAcc",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

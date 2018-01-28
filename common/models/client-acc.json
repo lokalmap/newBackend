@@ -1,0 +1,58 @@
+{
+  "name": "ClientAcc",
+  "plural": "ClientAccs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": [
+        "string"
+      ]
+    },
+    "accType": {
+      "type": "string"
+    },
+    "recoveryNum": {
+      "type": "string"
+    },
+    "datecreated": {
+      "type": "date"
+    },
+    "createdby": {
+      "type": "string"
+    },
+    "lastupdate": {
+      "type": "string"
+    },
+    "updatedby": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "map-DBs": {
+      "type": "hasMany",
+      "model": "Map-DB",
+      "foreignKey": ""
+    },
+    "product-DB-AAtoDDs": {
+      "type": "hasMany",
+      "model": "Product-DB-AAtoDD",
+      "foreignKey": ""
+    },
+    "service-DB-AAtoMMs": {
+      "type": "hasMany",
+      "model": "Service-DB-AAtoMM",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

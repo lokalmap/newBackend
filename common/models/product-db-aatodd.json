@@ -1,0 +1,93 @@
+{
+  "name": "Product-DB-AAtoDD",
+  "plural": "Product-DB-AAtoDD",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string"
+    },
+    "categoryA": {
+      "type": "string"
+    },
+    "modelDesc": {
+      "type": "string"
+    },
+    "unitType": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "brand": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "searchTags": {
+      "type": [
+        "string"
+      ]
+    },
+    "features": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "sn-num": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number"
+    },
+    "p1": {
+      "type": "object"
+    },
+    "p2": {
+      "type": "object"
+    },
+    "p3": {
+      "type": "object"
+    },
+    "p4": {
+      "type": "object"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "r-flag": {
+      "type": "boolean"
+    },
+    "laymans": {
+      "type": [
+        "string"
+      ]
+    },
+    "dtl": {
+      "type": [
+        "any"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientAcc": {
+      "type": "belongsTo",
+      "model": "ClientAcc",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

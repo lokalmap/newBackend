@@ -1,0 +1,76 @@
+{
+  "name": "Service-DB-AAtoMM",
+  "plural": "Service-DB-AAtoMMs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "unitType": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "searchtags": {
+      "type": [
+        "string"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number"
+    },
+    "p1": {
+      "type": "object"
+    },
+    "p2": {
+      "type": "boolean"
+    },
+    "p3": {
+      "type": "object"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "r-flag": {
+      "type": "boolean"
+    },
+    "dtl": {
+      "type": [
+        "any"
+      ]
+    },
+    "aclGrp": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientAcc": {
+      "type": "belongsTo",
+      "model": "ClientAcc",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,6 +1,6 @@
 {
   "db": {
-    "host": "localhost",
+    "host": "192.168.1.18",
     "port": 27017,
     "database": "SignUp",
     "username": "",

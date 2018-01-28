@@ -39,5 +39,21 @@
     "options": {
       "emailVerificationRequired": false
     }
+  },
+  "ClientAcc": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Map-DB": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Service-DB-AAtoMM": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Product-DB-AAtoDD": {
+    "dataSource": "db",
+    "public": true
   }
 }
