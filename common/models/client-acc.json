@@ -11,6 +11,30 @@
       "type": "string",
       "required": true
     },
+    "fname": {
+      "type": "string"
+    },
+    "lname": {
+      "type": "string",
+      "required": true
+    },
+    "mname": {
+      "type": "string"
+    },
+    "contactNum": {
+      "type":
+        "any"
+    },
+    "emailAddr": {
+      "type": "string",
+      "required": true
+    },
+    "recoveryEmail": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
     "role": {
       "type": [
         "string"
@@ -22,18 +46,9 @@
     "recoveryNum": {
       "type": "string"
     },
-    "datecreated": {
-      "type": "date"
-    },
-    "createdby": {
-      "type": "string"
-    },
-    "lastupdate": {
-      "type": "string"
-    },
-    "updatedby": {
-      "type": "string"
-    }
+    "dateinfo": [
+      "any"
+    ]
   },
   "validations": [],
   "relations": {
