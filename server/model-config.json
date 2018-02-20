@@ -55,5 +55,9 @@
   "Product-DB-AAtoDD": {
     "dataSource": "db",
     "public": true
+  },
+  "testmodel": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,38 @@
+{
+  "name": "testmodel",
+  "plural": "testmodel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "x": {
+      "type": "string",
+      "required": true
+    },
+    "li": {
+      "type": "any",
+      "required": true
+    },
+    "ads": {
+      "type": "any"
+    },
+    "agents": {
+      "type": "any"
+    },
+    "premprov": {
+      "type": "any"
+    },
+    "lstupd": {
+      "type": "date"
+    },
+    "provctr": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
