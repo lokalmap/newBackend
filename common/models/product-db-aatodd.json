@@ -45,7 +45,7 @@
     "caption": {
       "type": "string"
     },
-    "sn-num": {
+    "sn_num": {
       "type": "string"
     },
     "status": {
