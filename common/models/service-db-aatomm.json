@@ -49,7 +49,7 @@
     "rating": {
       "type": "number"
     },
-    "r-flag": {
+    "r_flag": {
       "type": "boolean"
     },
     "dtl": {
