@@ -59,5 +59,9 @@
   "testmodel": {
     "dataSource": "db",
     "public": true
+  },
+  "inven": {
+    "dataSource": "db",
+    "public": true
   }
 }

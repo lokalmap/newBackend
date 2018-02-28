@@ -1,0 +1,55 @@
+{
+  "name": "inven",
+  "plural": "invens",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "qty": {
+      "type": "number"
+    },
+    "utype": {
+      "type": "string",
+      "default": "batch_exp"
+    },
+    "batch_exp": {
+      "type": "string"
+    },
+    "item_info": {
+      "type": "string"
+    },
+    "supp_info": {
+      "type": "string"
+    },
+    "discnt": {
+      "type": "number"
+    },
+    "cid": {
+      "type": "string"
+    },
+    "vdte": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clientAcc": {
+      "type": "belongsTo",
+      "model": "ClientAcc",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

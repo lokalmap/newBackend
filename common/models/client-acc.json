@@ -22,8 +22,7 @@
       "type": "string"
     },
     "contactNum": {
-      "type":
-        "any"
+      "type": "any"
     },
     "emailAddr": {
       "type": "string",
@@ -46,9 +45,11 @@
     "recoveryNum": {
       "type": "string"
     },
-    "dateinfo": [
-      "any"
-    ]
+    "dateinfo": {
+      "type": [
+        "any"
+      ]
+    }
   },
   "validations": [],
   "relations": {
