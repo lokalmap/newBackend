@@ -67,6 +67,11 @@
       "type": "hasMany",
       "model": "Service-DB-AAtoMM",
       "foreignKey": ""
+    },
+    "cBookings": {
+      "type": "hasMany",
+      "model": "CBooking",
+      "foreignKey": ""
     }
   },
   "acls": [],

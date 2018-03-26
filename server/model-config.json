@@ -63,5 +63,9 @@
   "inven": {
     "dataSource": "db",
     "public": true
+  },
+  "CBooking": {
+    "dataSource": "db",
+    "public": true
   }
 }

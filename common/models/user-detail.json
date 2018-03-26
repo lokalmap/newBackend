@@ -22,7 +22,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "cBookings": {
+      "type": "hasMany",
+      "model": "CBooking",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

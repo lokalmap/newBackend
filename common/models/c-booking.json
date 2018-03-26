@@ -1,0 +1,30 @@
+{
+  "name": "CBooking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "data": {
+      "type": "any",
+      "required": true
+    },
+    "cdate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usersDetail": {
+      "type": "belongsTo",
+      "model": "UsersDetail",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
