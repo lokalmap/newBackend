@@ -27,6 +27,11 @@
       "type": "hasMany",
       "model": "CBooking",
       "foreignKey": ""
+    },
+    "pBookings": {
+      "type": "hasMany",
+      "model": "PBooking",
+      "foreignKey": ""
     }
   },
   "acls": [],
