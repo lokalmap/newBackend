@@ -1,0 +1,30 @@
+{
+  "name": "chatdb",
+  "plural": "chatdbs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cdate": {
+      "type": "date"
+    },
+    "ldate": {
+      "type": "date"
+    },
+    "name": {
+      "type": "string"
+    },
+    "members": {
+      "type": "any"
+    },
+    "sesid": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "chathstdb",
+  "plural": "chathstdbs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "archv": {
+      "type": "any"
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

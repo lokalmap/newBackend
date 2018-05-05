@@ -1,0 +1,21 @@
+{
+  "name": "Incepdb",
+  "plural": "Incepdbs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "data": {
+      "type": "any"
+    },
+    "X":{
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

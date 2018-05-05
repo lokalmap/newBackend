@@ -71,5 +71,21 @@
   "PBooking": {
     "dataSource": "db",
     "public": true
+  },
+  "setting": {
+    "dataSource": "db",
+    "public": true
+  },
+  "chatdb": {
+    "dataSource": "db",
+    "public": true
+  },
+  "chathstdb": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Incepdb": {
+    "dataSource": "db",
+    "public": true
   }
 }
