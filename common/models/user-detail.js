@@ -37,9 +37,46 @@ app.post('/api/ApiUsers/reset-password', function(req, res, next) {
 
 
 module.exports = function(UsersDetail) {
+  //console.log("MMM000");
   User = UsersDetail;
   UsersDetail.validatesInclusionOf('accountType', {in: ['Customer', 'Provider']});
   UsersDetail.validatesUniquenessOf('email', {message: 'Email is already present.'});
   UsersDetail.validatesUniquenessOf('username', {message: 'Username is already taken.'});
   UsersDetail.on('resetPasswordRequest', handlers.sendResetMail);
+
+  User.search = function(id,req,cb){
+  //  console.log("MMM111");
+    var filter = {
+      include:{
+      relation: 'assets',
+        scope:{
+          fields:['value']
+        }
+      }
+    }
+    var headervar = req.headers;
+    cb(null,{data:'sample'});
+  };
+  User.remoteMethod('search',{
+    description: "grant read only access to everyone for user name db query",
+    accepts:[{
+      arg:'id',
+      type: 'any',
+      required: false
+    },
+    {arg: 'req', type: 'object', http: {source: 'req'}}
+    ],
+    http:{
+      path:'/search/:id',
+      verb: 'get'
+    },
+    returns:{
+      arg:'ack',
+      type:'any'
+    }
+  });
+
 };
+
+//https://github.com/strongloop/loopback/issues/559
+//https://loopback.io/doc/en/lb2/AccessToken-invalidation.html

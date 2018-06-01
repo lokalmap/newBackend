@@ -10,7 +10,7 @@
     "data": {
       "type": "any"
     },
-    "X":{
+    "X": {
       "type": "string"
     }
   },
