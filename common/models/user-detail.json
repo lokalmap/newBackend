@@ -4,7 +4,6 @@
   "base": "User",
   "idInjection": true,
   "options": {
-    "injectOptionsFromRemoteContext": true,
     "validateUpsert": true
   },
   "properties": {
@@ -38,7 +37,7 @@
   "acls": [{
   "accessType": "READ",
   "principalType": "ROLE",
-  "principalId": "$everyone",
+  "principalId": "$authenticated",
   "permission": "ALLOW"
   }],
   "methods": {}
